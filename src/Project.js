@@ -1,0 +1,39 @@
+ import React,{Component} from 'react'
+ import PROJECTS    from './data/project'
+
+ class Proj extends Component
+ {
+     render(){
+         return (
+
+            <div>{this.props.pr.title}</div>
+         );
+         }
+ }
+
+ class Projects extends Component
+ {
+     render()
+     {
+         return(
+             <div>
+
+                <div><h2>Highlighted Projects</h2></div>
+                {PROJECTS.map(
+                    X=>{
+
+                        return (
+                            <Proj  key={X.id} pr={X}/>
+                        )
+                    }
+
+                )}
+
+             </div>
+
+
+         );
+     }
+ }
+
+ export default Projects;
