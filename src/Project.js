@@ -5,8 +5,10 @@
  {
      render(){
          return (
-
+            <div>
             <div>{this.props.pr.title}</div>
+            <div>{this.props.pr.title}</div>
+            </div>
          );
          }
  }
